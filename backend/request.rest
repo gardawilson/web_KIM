@@ -1,0 +1,93 @@
+// Create user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "admin",
+    "email": "admin1@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+###
+// Get all user
+GET http://localhost:5000/users
+
+###
+// Get single user
+GET http://localhost:5000/users/2486302d-6fb4-4a0c-878c-226045e565b0
+
+###
+// Update user
+PATCH http://localhost:5000/users/3eeb1f7e-5003-42d0-b463-c8a505251598
+Content-Type: application/json
+
+{
+    "name": "M Fikri updated1",
+    "email": "admin@gmail.com",
+    "password": "123",
+    "confPassword": "123",
+    "role": "admin"
+}
+
+###
+// Delete a user
+DELETE  http://localhost:5000/users/3eeb1f7e-5003-42d0-b463-c8a505251598
+Content-Type: application/json
+
+{
+    "name": "M Fikri updated1",
+    "email": "admin1@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+//Login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+//Account login
+GET http://localhost:5000/me
+
+###
+//Logout
+DELETE http://localhost:5000/logout
+
+###
+//Get all products
+GET http://localhost:5000/products
+
+###
+//Get single product
+GET http://localhost:5000/products/65eafccf-0533-4269-a775-802ad957be1b
+###
+//Post data product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Product 7",
+    "stockProduct": 100
+}
+
+###
+//Update data product
+PATCH http://localhost:5000/products/65eafccf-0533-4269-a775-802ad957be1b
+Content-Type: application/json
+
+{
+    "name": "Product Updated",
+    "stockProduct": 200
+}
+
+###
+//Delete data product
+DELETE http://localhost:5000/products/94cffc9e-6c98-4b70-8c43-fb3aa6f399a3
