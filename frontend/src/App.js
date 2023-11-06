@@ -7,6 +7,8 @@ import AddUser from "./pages/AddUser";
 import EditUser from "./pages/EditUser";
 import AddProduct from "./pages/AddProduct";
 import EditProduct from "./pages/EditProduct";
+import Profile from "./pages/Profile";
+import UpdateProfile from "./pages/UpdateProfile"
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/add" element={<AddProduct />} />
           <Route path="/products/edit/:id" element={<EditProduct />} />
+          <Route path="/profile/:id" element={<Profile />} />
+          <Route path="/profile/edit/:id" element={<UpdateProfile />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -41,7 +41,43 @@ const Users = db.define('users',{
         validate:{
             notEmpty: true
         }
+    },
+    image:{
+        type: DataTypes.STRING,
+        allowNull: true,
+        validate:{
+            notEmpty: true
+        }
+    },
+    url:{
+        type: DataTypes.STRING,
+        allowNull: true,
+        validate:{
+            notEmpty: true
+        }
+    },
+    no_hp:{
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        validate:{
+            notEmpty: true
+        }
+    },
+    alamat:{
+        type: DataTypes.STRING,
+        allowNull: true,
+        validate:{
+            notEmpty: true
+        }
+    },
+    tgl_lahir:{
+        type: DataTypes.DATE,
+        allowNull: true,
+        validate:{
+            notEmpty: true
+        }
     }
+
 },{
     freezeTableName: true
 });
